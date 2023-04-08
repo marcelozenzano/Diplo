@@ -2,3 +2,4 @@ yerba
 azucar
 manteca
 lavandina
+galletas

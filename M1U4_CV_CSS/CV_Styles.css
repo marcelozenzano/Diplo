@@ -1,0 +1,87 @@
+/* ---------------------------- Selectores de Tipos y Etiquetas */
+header {
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    padding: 20px 20px;
+    margin: 50px;
+    border: 3px solid #a1a1a1
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 6px;
+}
+
+p {
+    font-family: Cambria;
+    font-size: 16px;
+    color: darkblue;
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: Cambria;
+    font-size: 60px;
+    color: rgb(44, 132, 75);
+    margin: 0;
+}
+
+h2 {
+    font-family: Cambria;
+    font-size: 30px;
+    color: rgb(44, 132, 75);
+    margin-left: 10px;
+}
+
+h3 {
+    font-family: Cambria;
+    font-size: 20px;
+    color: rgb(44, 132, 75);
+    margin: 10px;
+}
+
+ol {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: darkblue;
+    margin-left: 40px;
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: darkblue;
+    margin-left: 40px;
+}
+
+/* ---------------------------- Definición de Clases*/
+.pbold{
+    font-weight: bold;
+}
+
+/* ---------------------------- Definición de IDs*/
+#seccion_intro{
+    background-color: rgb(181, 227, 181);
+}
+
+#seccion_datos{
+    background-color: rgb(227, 213, 182);
+}
+
+#seccion_musica{
+    background-color: rgb(181, 227, 220);
+}
+
+#seccion_pelis{
+    background-color: rgb(181, 206, 227);
+}
+
+#seccion_perfil{
+    background-color: rgb(184, 181, 227);
+}
+
+#seccion_form{
+    background-color: rgb(227, 181, 208);
+}

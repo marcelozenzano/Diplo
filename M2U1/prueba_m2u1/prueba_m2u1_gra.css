@@ -1,0 +1,18 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+
+
+.destacar {
+    background-color: yellow; /*sólo para ir viendo el tamaño de la caja, luego borrar*/
+    width: 300px; /*ancho de caja*/
+    height: 500px; /*alto de caja*/
+    margin: 100px; /*distancia superior e izquierda de la caja al borde*/
+    padding: 40px; /*tabulación superior e inferior del texto dentro de la caja*/
+    background: rgb(190, 193, 210);
+    background: linear-gradient(90deg, rgba(190, 193, 210, 1) 0%, rgba(13, 13, 130, 1) 90%, rgba(0, 147, 177, 1) 100%);
+    /*sombra para la caja, tamaño en +-x, tamaño en +-y, desenfoque, color*/
+    box-shadow: 10px 10px 20px black;
+}

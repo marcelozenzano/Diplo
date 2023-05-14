@@ -1,5 +1,6 @@
 div {
-    border: 50px;
+    border: solid 2px;
+    border-radius: 5px;
     border-color: black;
 }
 
@@ -13,9 +14,11 @@ div {
 
 .caja2 {
     background: #3E6ABC;
+    height: 300px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
     background: linear-gradient(270deg, #3E6ABC, #17161B);
     color: blue;
 }

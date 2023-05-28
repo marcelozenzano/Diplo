@@ -84,4 +84,10 @@ aside {
 		/*float: right;*/
 		width:100%;
 	}
+
+	/*Ojo, esto no sirve cuando la estructura del sitio es muy
+	distinta de un tamaño a otro. Si quiero dos maquetados
+	completamente distintos para uno u otro tamaño, entonces
+	es mejor utilizar dos (o más) hojas de estilos distintas, 
+	una para cada tamaño. */
 }

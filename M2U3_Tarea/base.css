@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	color: #000;
+	background: #332F29;
+	font-size:100%;
+}
+#contenedor {
+	width: 800px;
+	background: #8FA68E;
+	margin-right:auto;
+	margin-left:auto;
+	overflow: hidden;
+}
+nav {
+	background: #CC3910;
+	float: left;
+	width: 160px;
+}
+ul {
+	list-style-type:none;
+}
+a {
+	color:#F1F2C0;
+	text-decoration: none;
+}
+section {
+	background: #F1F2C0;
+	float: left;
+	margin: 0 0 0 25px;
+	width: 400px;
+}
+aside {
+	background: #CCC59E;
+	float: right;
+	width: 190px;
+}
+
+@media screen and  (max-width: 800px){
+	/* ------ ESTO PARA PROBAR CON EL BODY*/
+	body {
+		background: #55342a;
+	}
+
+	/* ------- A PARTIR DE AQUÍ, SE COPIÓ Y PEGÓ EL CÓDIGO ANTERIOR*/
+	#contenedor {
+		width:100%;
+		background: #8FA68E;
+		/*margin-right:auto;
+		margin-left:auto;
+		overflow: hidden;*/
+	}
+
+	nav {
+		background: #1636ec;
+		/* --- SIGUIENTE LÍNEA YA NO HACE FALTA*/
+		/*float: left;*/
+		width:100%;
+	}
+	/* ------- NO ES NECESARIO MODIFICAR
+	ul {
+		list-style-type:none;
+	}*/
+	
+	/* ------- NO ES NECESARIO MODIFICAR
+	a {
+		width:100%;
+		color:#F1F2C0;
+		text-decoration: none;
+	}*/
+	
+	section {
+		background: #eff0d7;
+		/* ---- SIGUIENTE LÍNEA YA NO HACE FALTA, Y... SE MODIFICÓ EL MARGINs*/
+		/*float: left;*/
+		/*margin: 0 0 0 0px;*/
+		margin: 0;
+		width:100%;
+	}
+	aside {
+		background: #e7e4d3;
+		/* ----- SIGUIENTE LÍNEA YA NO HACE FALTA*/
+		/*float: right;*/
+		width:100%;
+	}
+}

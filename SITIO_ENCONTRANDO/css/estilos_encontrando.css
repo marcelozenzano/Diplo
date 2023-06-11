@@ -286,6 +286,7 @@ img {
     font-size: 11px;
     font-style: italic;
 }
+
 /*FIN NOSOTROS*/
 
 /*REGLAS SERVICIOS --------------------------------------------------------------------------*/
@@ -294,7 +295,7 @@ img {
     padding-right: 20px;
 }
 
-.servicios {
+.servicio {
     border: 1px solid #c1c2c4;
     border-radius: 5px;
     padding: 13px;
@@ -303,8 +304,44 @@ img {
     gap: 32px;
     align-items: center;
     box-shadow: 0 0 5px rgb(156, 152, 149);
+    min-width: 400px;
 }
 
+.servicio img {
+    border-radius: 50%;
+    display: block;
+}
 
+/* .servicio:nth-child(even) {
+    flex-direction: row-reverse;
+} ... No se adapta bien al diseño con botón, queda como muy desordenado*/
+
+.btn {
+    /* Color del texo */
+    color: darkkhaki;
+    /* Eliminar color de fondo */
+    background: transparent;
+    /* Grosor del borde, estilo de línea y color */
+    /* border: 2px solid #0099CC;  ... antes de modificación*/
+    border: 2px solid darkkhaki;
+    /* Añadir esquinas curvadas */
+    border-radius: 6px;
+    text-align: center;
+    /* font-size: 28px; */
+    padding: 5px;
+    width: 300px;
+    align-self: center;
+}
+
+.btn:hover {
+    /* background-color: #008CBA; ... antes de modificación*/
+    background-color: bisque;
+    /* color: white;  ... antes de modificación*/
+    color: rgb(107, 91, 69);
+    -webkit-transition-duration: 1s;
+    /* Safari */
+    transition-duration: 1s;
+    cursor: pointer;
+}
 
 /*FIN SERVICIOS*/

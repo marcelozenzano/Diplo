@@ -80,8 +80,39 @@ h2 {
     color: rgb(101, 104, 95)
 }
 
+/*Botones del Sitio: Generales*/
+.btn {
+    /* Color del texo */
+    color: darkkhaki;
+    /* Eliminar color de fondo */
+    background: transparent;
+    /* Grosor del borde, estilo de línea y color */
+    /* border: 2px solid #0099CC;  ... antes de modificación*/
+    border: 2px solid darkkhaki;
+    /* Añadir esquinas curvadas */
+    border-radius: 6px;
+    text-align: center;
+    /* font-size: 28px; */
+    padding: 5px;
+    /* width: 300px; */
+    align-self: center;
+}
+
+.btn:hover {
+    /* background-color: #008CBA; ... antes de modificación*/
+    background-color: bisque;
+    /* color: white;  ... antes de modificación*/
+    color: rgb(107, 91, 69);
+    -webkit-transition-duration: 1s;
+    /* Safari */
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+
 /* ------- HEADER ROBADO Y MODIFICADO JEJEJE  ----------------------------------------------------------------------------- */
 /*By @nodws Feel free to use it on your project, paypal me a beer if you want :D pay@nodws.com*/
+/*EXTRAÍDO DE: https://freefrontend.com/css-headers-footers/ */
 
 html,
 body {
@@ -226,8 +257,8 @@ img {
     padding: 10px;
     text-align: center;
 }
-
 /*FIN HOME*/
+
 
 /*REGLAS NOSOTROS ---------------------------------------------------------------*/
 .historia {
@@ -286,8 +317,8 @@ img {
     font-size: 11px;
     font-style: italic;
 }
-
 /*FIN NOSOTROS*/
+
 
 /*REGLAS SERVICIOS --------------------------------------------------------------------------*/
 .cuerposervicios {
@@ -305,6 +336,7 @@ img {
     align-items: center;
     box-shadow: 0 0 5px rgb(156, 152, 149);
     min-width: 400px;
+    /* flex-wrap: wrap; FUNCIONA PERO PONE UNA COSA DEBAJO DE LA OTRA*/
 }
 
 .servicio img {
@@ -312,36 +344,126 @@ img {
     display: block;
 }
 
-/* .servicio:nth-child(even) {
-    flex-direction: row-reverse;
-} ... No se adapta bien al diseño con botón, queda como muy desordenado*/
-
-.btn {
-    /* Color del texo */
-    color: darkkhaki;
-    /* Eliminar color de fondo */
-    background: transparent;
-    /* Grosor del borde, estilo de línea y color */
-    /* border: 2px solid #0099CC;  ... antes de modificación*/
-    border: 2px solid darkkhaki;
-    /* Añadir esquinas curvadas */
-    border-radius: 6px;
-    text-align: center;
-    /* font-size: 28px; */
-    padding: 5px;
+.servicio .btn {
+    display:block;
     width: 300px;
+}
+/*FIN SERVICIOS*/
+
+
+/*REGLAS NOTICIAS --------------------------------------------------------------------------*/
+.noticias {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.noticia {
+    border: 1px solid #c1c2c4;
+    border-radius: 5px;
+    padding: 13px;
+    margin: 16px 0;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(156, 152, 149);
+    /* min-width: 400px; */
+}
+
+.notititulo {
+    color: #84a3e0;
+}
+/*FIN NOTICIAS*/
+
+
+/*REGLAS CONTACTO --------------------------------------------------------------------------*/
+.contacto {
+    display: flex;
+    gap: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.datos {
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+}
+
+.formulario p input,
+.formulario p textarea {
+    background: rgb(240, 240, 240);
+    border-radius: 5px;
+    border: 1px solid #c1c2c4;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.formulario p textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario p:nth-child(4) {
+    /*ojo, es sólo para el cuarto hijo: Mensaje*/
+    align-items: start;
+}
+
+.contacto .btn {
+    width: 80px;
+    position: relative;
+    left: 6.3rem;
+}
+/*FIN CONTACTO*/
+
+
+/*REGLAS SERVICIOS>Adoptar -------------------------------------------------------------------*/
+.adopciones {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.adopcion {
+    border: 1px solid #c1c2c4;
+    border-radius: 5px;
+    padding: 13px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgb(156, 152, 149);
+    flex-grow: 1;
+}
+
+.adopcion img {
+    border-radius: 10%;
+    text-align: center;
+}
+
+.adopcion .btn {
+    width: 100px;
     align-self: center;
 }
-
-.btn:hover {
-    /* background-color: #008CBA; ... antes de modificación*/
-    background-color: bisque;
-    /* color: white;  ... antes de modificación*/
-    color: rgb(107, 91, 69);
-    -webkit-transition-duration: 1s;
-    /* Safari */
-    transition-duration: 1s;
-    cursor: pointer;
-}
-
-/*FIN SERVICIOS*/
+/*FIN SERVICIOS > Adoptar*/
